@@ -1,0 +1,408 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 1;
+}
+
+li, dl, dt, dd {
+  list-style: none;
+}
+
+.l-footer {
+  height: auto;
+  padding: 5% 0;
+  background-color: #FFF2F6;
+  text-align: center;
+}
+
+.l-footer__attention {
+  color: #e979a6;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.l-footer__socialmedia {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.l-footer__privacy {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.l-footer__privacy a {
+  color: #707070;
+}
+
+.l-footer__copyright {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.l-header {
+  height: auto;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.l-header__sitesubname {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.l-header__sitename {
+  padding: 1rem 0;
+}
+
+.l-header__sitename__img {
+  width: 90%;
+  height: 10rem;
+}
+
+.nav_toggle {
+  display: block;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0 0 auto;
+  margin-right: 5%;
+}
+
+.nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #e979a6;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+}
+
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(14px) rotate(-45deg);
+}
+
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-13px) rotate(45deg);
+}
+
+.nav_menu {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.nav_menu__item {
+  border-bottom: solid 1px #DEDEDE;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.nav_menu__item a {
+  color: #e979a6;
+}
+
+.nav_menu.show {
+  display: block;
+}
+
+.p-hamburger_menu-background {
+  display: none;
+  position: fixed;
+  top: 11rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.p-hamburger_menu-background.show {
+  display: block;
+}
+
+body.show {
+  position: fixed;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.topimage img {
+  width: 100%;
+  height: 25rem;
+}
+
+.l-main {
+  margin: 5rem auto 10rem;
+}
+
+.c-button {
+  display: block;
+  margin: 5rem auto;
+  padding: 1.5rem 0;
+  width: 80%;
+  border-radius: 10rem;
+  background-color: #e979a6;
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.c-mainTitle {
+  text-align: center;
+}
+
+.c-mainTitle h1, .c-mainTitle p {
+  position: relative;
+  margin-bottom: 5rem;
+  padding: 0.5rem 0;
+  color: #e979a6;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.c-mainTitle h1::before, .c-mainTitle h1::after, .c-mainTitle p::before, .c-mainTitle p::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 8rem;
+  height: 3px;
+  background-color: #e979a6;
+}
+
+.c-mainTitle h1::before, .c-mainTitle p::before {
+  top: 0;
+}
+
+.c-mainTitle h1::after, .c-mainTitle p::after {
+  bottom: 0;
+}
+
+.c-news {
+  width: 90%;
+  margin: auto;
+}
+
+.c-news__date {
+  margin-top: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.c-news__title {
+  margin-bottom: 2rem;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  color: #707070;
+  text-decoration: underline;
+}
+
+.c-news hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #CBCBCB;
+  border: 0;
+  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+
+.p-card {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 561px) {
+  .p-card {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 33rem;
+  }
+}
+
+.p-card__img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+@media (min-width: 561px) {
+  .p-card__img {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.p-card__contents {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  background-color: #e979a6;
+  color: white;
+  text-align: center;
+}
+
+.p-card__contents dt {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+@media (min-width: 561px) {
+  .p-card__contents {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.p-card__contents__button {
+  display: block;
+  margin: 5rem auto 3rem;
+  padding: 1.5rem 0;
+  width: 50%;
+  border-radius: 10rem;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p-introduction {
+  width: 90%;
+  height: auto;
+  margin: 3rem auto 10rem;
+  padding: 0 2rem 4rem;
+  border: solid 2px #E979A6;
+  border-radius: 10px;
+}
+
+.p-introduction h2 {
+  line-height: 2.5rem;
+  position: relative;
+  top: -2.5rem;
+  background-color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p-introduction p {
+  line-height: 2rem;
+  font-size: 1.7rem;
+}
+
+.p-newslist {
+  height: auto;
+  margin: 5rem auto 0;
+  padding: 5rem 0;
+}
+
+.p-newslist h2 {
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+  color: #e979a6;
+  font-size: 2.3rem;
+}
+
+.p-newslist h2::before, .p-newslist h2::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 2px;
+  background-color: #e979a6;
+}
+
+.p-newslist h2::before {
+  left: 15%;
+}
+
+.p-newslist h2::after {
+  right: 15%;
+}
+
+.p-post {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.p-post h2 {
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border-left: solid 5px #e979a6;
+  border-bottom: solid 3px #e979a6;
+  background-color: #FFF2F6;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.p-post h3 {
+  padding: 0.5rem 1rem;
+  border-left: solid 5px #e979a6;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.p-post p {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+}
+/*# sourceMappingURL=17emotion.css.map */

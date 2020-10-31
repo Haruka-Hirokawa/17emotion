@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.p-introduction {
+    width: 90%;
+    height: auto;
+    margin: 3rem auto 10rem;
+    padding: 0 2rem 4rem;
+    border: solid 2px #E979A6;
+    border-radius: 10px;
+
+    h2{
+        line-height: 2.5rem;
+        position: relative;
+        top: -2.5rem;
+        background-color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        line-height: 2rem;
+        font-size: 1.7rem;
+    }
+}

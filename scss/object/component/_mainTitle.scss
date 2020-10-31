@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.c-mainTitle {
+    text-align: center;
+
+    h1, p {
+        position: relative;
+        margin-bottom: 5rem;
+        padding: 0.5rem 0;
+        color: $dark-pink;
+        font-size: 3rem;
+        line-height: 5rem;
+
+        &::before, &::after{
+            content: "";
+            display: inline-block;
+            // display: inline; との違い（参考URL：https://saruwakakun.com/html-css/basic/display）
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 8rem;
+            height: 3px;
+            background-color: $dark-pink;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+  
+}

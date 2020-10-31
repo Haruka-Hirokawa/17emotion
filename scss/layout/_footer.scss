@@ -1,0 +1,35 @@
+@import "../variables";
+
+.l-footer {
+    height: auto;
+    padding: 5% 0;
+    background-color: $light-pink;
+    text-align: center;
+
+    &__attention{
+        color: $dark-pink;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__socialmedia{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    &__privacy {
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        font-family: $japanese-font;
+        a {
+            color: #707070;
+        }
+    }
+
+    &__copyright {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        font-family: $japanese-font;
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.p-post {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+
+    h2{
+        margin-bottom: 5rem;
+        padding: 1rem;
+        // border: solid 3px $dark-pink;
+        border-left: solid 5px $dark-pink;
+        border-bottom: solid 3px $dark-pink;
+        background-color: $light-pink;
+        font-family: $japanese-font;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        padding: 0.5rem 1rem;
+        border-left: solid 5px $dark-pink;
+        font-family: $japanese-font;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+}

@@ -1,0 +1,125 @@
+@import "../variables";
+
+.l-header {
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: center;
+
+    &__sitesubname{
+        padding-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    &__sitename{
+        padding: 1rem 0;
+        &__img {
+            width: 90%;
+            height: 10rem;
+        }
+    }
+}
+
+
+// ハンバーガーメニュー
+.nav_toggle {
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 0 auto;
+    margin-right: 5%;
+
+    i {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $dark-pink;
+        position: absolute;
+        transition: transform .5s, opacity .5s;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &:nth-child(3) {
+            bottom: 0;
+        }
+    }
+
+    &.show i:nth-child(1) {
+        transform: translateY(14px) rotate(-45deg);
+    }
+    &.show i:nth-child(2) {
+        opacity: 0;
+    }
+    &.show i:nth-child(3) {
+        transform: translateY(-13px) rotate(45deg);
+    }
+
+}
+
+.nav_menu {
+    display: none;
+
+    position: fixed;
+    top: 5rem;
+    z-index: 10;
+
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    &__item { // wp_nav_menu()で取得したli要素のクラス名を指定する方法（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html#h5_index_10）
+        border-bottom: solid 1px #DEDEDE;
+        font-size: 3rem;
+        line-height: 5rem;
+        a {
+            color: $dark-pink;
+        }
+    }
+
+    &.show {
+        display: block;
+    }
+}
+
+// ↓スマホ画面 サイドバー出現時 モーダル部分（body部分を透過）
+.p-hamburger_menu-background {
+    display: none;
+
+    position: fixed;
+    top: 11rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+
+    &.show {
+        display: block;
+    }
+}
+// ↑スマホ画面 サイドバー出現時 モーダル部分（body部分を透過）
+
+
+body.show {
+    position: fixed;
+    height: 100vh;
+    overflow-y: hidden;
+    // モーダルを開いている時にbody部分を固定（参考URL：https://coliss.com/articles/build-websites/operation/javascript/prevent-page-scrolling-when-a-modal-is-open.html）
+}
+
+
+
+
+.topimage {
+    img {
+        width: 100%;
+        height: 25rem;
+    }
+}

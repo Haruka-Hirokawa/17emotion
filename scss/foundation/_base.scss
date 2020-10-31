@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%; // →10px
+}
+
+body{
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+
+li, dl, dt, dd {
+    list-style: none;
+}
+
+
+// ↓メディアクエリ
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: 561px) {
+            @content;
+        }
+    }
+
+    @if $point == pc {
+        @media (min-width: 961px) {
+            @content;
+        }
+    }
+}
+// ↑メディアクエリ

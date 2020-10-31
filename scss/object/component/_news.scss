@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.c-news {
+    width: 90%;
+    margin: auto;
+
+    &__date {
+        margin-top: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+    &__title {
+        margin-bottom: 2rem;
+        line-height: 3rem;
+        font-size: 1.7rem;
+        color: #707070;
+        text-decoration: underline;
+    }
+    hr {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #CBCBCB;
+        border: 0;  /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+        // hrタグデザイン（参考URL：https://www.yoheim.net/blog.php?q=20121101）
+    }
+}

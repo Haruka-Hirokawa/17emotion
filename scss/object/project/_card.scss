@@ -1,12 +1,12 @@
 @import "../../variables";
 
 .p-card {
-    margin-bottom: 2rem;
+    margin: 5rem 0;
 
     @include breakpoint( tablet ) {
         display: flex;
         margin: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
         width: 90%;
         height: 33rem;
     }
@@ -15,6 +15,7 @@
         display: block;
         margin: auto;
         width: 90%;
+        height: 24rem;
     
         @include breakpoint( tablet ) {
             width: 50%;
@@ -27,31 +28,21 @@
         margin: auto;
         padding: 1rem;
         width: 90%;
+        height: 24rem;
         background-color: $dark-pink;
         color: white;
         text-align: center;
         dt {
             margin: 2rem 0;
             font-size: 3rem;
+            font-weight: bold;
         }
-        // dd {
-        //     font-size: 1.7rem;
-        //     line-height: 2.5rem;
-        // }
+        dd {
+            line-height: 4rem;
+        }
         @include breakpoint( tablet ) {
             width: 50%;
             height: 100%;
-        }
-        &__button {
-            display: block;
-            margin: 5rem auto 3rem;
-            padding: 1.5rem 0;
-            width: 50%;
-            border-radius: 10rem;
-            background-color: white;
-            // color: $text-gray;
-            font-size: 1.5rem;
-            text-align: center;
         }
     }
 }

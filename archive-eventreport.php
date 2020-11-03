@@ -20,7 +20,7 @@
                         <dt><?php the_title(); ?></dt>
                         <dd><?php the_excerpt(); ?></dd>
 
-                        <button type="button" onclick="location.href='<?php the_permalink(); ?>'" class="c-card__contents__button">詳しく見る</button>
+                        <button type="button" onclick="location.href='<?php the_permalink(); ?>'" class="c-button--white">See More</button>
                     </dl>
                     
                 </li>

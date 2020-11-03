@@ -35,8 +35,8 @@
                 ) ); 
             ?>
             <!-- ナビゲーションメニューの登録・有効化（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html） -->
-
         </div>
+        
 
         <!-- スマホ画面 ハンバーガーメニュー出現時 モーダル部分（body部分を透過） -->
         <div class="p-hamburger_menu-background" id="hamburger_menu-background"></div>

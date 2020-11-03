@@ -32,6 +32,7 @@
 // -----------------------------------------------------------------
 
 @import "object/project/_card";
+@import "object/project/_entryForm";
 @import "object/project/_introduction";
 @import "object/project/_newslist";
 @import "object/project/_post";
@@ -41,4 +42,5 @@
 // Utility
 // -----------------------------------------------------------------
 
-// @import "object/utility/_align";
+@import "object/utility/_margin";
+@import "object/utility/_width";

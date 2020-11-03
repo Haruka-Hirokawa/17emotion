@@ -3,16 +3,16 @@
     <main class="l-main">
 
         <!-- スライダーを実装するまでの仮の写真 l-header.scssにスタイリング記載-->
-        <div class="topimage">
+        <!-- <div class="topimage">
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="">
-        </div>
+        </div> -->
 
-        <!-- <ul class="slider">
+        <ul class="slider">
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
-        </ul> -->
+        </ul>
     
     
         
@@ -33,7 +33,7 @@
                 <?php endif; ?>           
             </ul>
 
-            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button">See All News</button>
+            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button--pink u-width--80">See All News</button>
             <!-- WordPressの各ページへリンクを貼る方法（参考URL：https://www.sejuku.net/blog/61709） -->
             <!-- WordPressでは初期設定で「ブログ投稿記事一覧」のURLを取得し、利用できる状態にはなっていない！？（参考URL：https://designerbrg.com/blog_list_url/） -->
 

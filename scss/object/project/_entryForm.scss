@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.p-entryForm {
+    width: 90%;
+    height: auto;
+    margin: 15rem auto;
+    padding: 0 2rem 4rem;
+    border: solid 2px $dark-pink;
+    border-radius: 10px;
+
+    h2{
+        position: relative;
+        top: -4rem;
+        line-height: 2.5rem;
+        width: 85%;
+        margin: auto;
+        padding: 1rem 0.5rem;
+        border: solid 3px $dark-pink;
+        background-color: $light-pink;
+        font-family: $japanese-font;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}

@@ -6,7 +6,6 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  line-height: 1.5rem;
   font-family: 'Roboto', sans-serif;
   color: #707070;
 }
@@ -16,7 +15,12 @@ h1 {
 }
 
 h2 {
+  font-size: 2rem;
+}
+
+p {
   font-size: 1.7rem;
+  line-height: 2.5rem;
 }
 
 a {
@@ -72,14 +76,13 @@ li, dl, dt, dd {
 
 .l-header {
   height: auto;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   padding: 1rem 0;
   text-align: center;
 }
 
 .l-header__sitesubname {
   padding-top: 2rem;
-  font-size: 1.6rem;
 }
 
 .l-header__sitename {
@@ -96,8 +99,7 @@ li, dl, dt, dd {
   position: relative;
   width: 3rem;
   height: 3rem;
-  margin: 0 0 0 auto;
-  margin-right: 5%;
+  margin-left: 10%;
 }
 
 .nav_toggle i {
@@ -138,7 +140,7 @@ li, dl, dt, dd {
 .nav_menu {
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 6rem;
   z-index: 10;
   width: 100%;
   height: auto;
@@ -189,15 +191,28 @@ body.show {
   margin: 5rem auto 10rem;
 }
 
-.c-button {
+.c-button--pink {
   display: block;
   margin: 5rem auto;
-  padding: 1.5rem 0;
-  width: 80%;
+  padding: 0.8rem 0;
   border-radius: 10rem;
   background-color: #e979a6;
   color: white;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.c-button--white {
+  display: block;
+  margin: 0 0 0 auto;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  width: 50%;
+  border-radius: 10rem;
+  background-color: white;
+  color: #e979a6;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -262,14 +277,14 @@ body.show {
 }
 
 .p-card {
-  margin-bottom: 2rem;
+  margin: 5rem 0;
 }
 
 @media (min-width: 561px) {
   .p-card {
     display: flex;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     width: 90%;
     height: 33rem;
   }
@@ -279,6 +294,7 @@ body.show {
   display: block;
   margin: auto;
   width: 90%;
+  height: 24rem;
 }
 
 @media (min-width: 561px) {
@@ -293,6 +309,7 @@ body.show {
   margin: auto;
   padding: 1rem;
   width: 90%;
+  height: 24rem;
   background-color: #e979a6;
   color: white;
   text-align: center;
@@ -301,6 +318,11 @@ body.show {
 .p-card__contents dt {
   margin: 2rem 0;
   font-size: 3rem;
+  font-weight: bold;
+}
+
+.p-card__contents dd {
+  line-height: 4rem;
 }
 
 @media (min-width: 561px) {
@@ -310,14 +332,26 @@ body.show {
   }
 }
 
-.p-card__contents__button {
-  display: block;
-  margin: 5rem auto 3rem;
-  padding: 1.5rem 0;
-  width: 50%;
-  border-radius: 10rem;
-  background-color: white;
-  font-size: 1.5rem;
+.p-entryForm {
+  width: 90%;
+  height: auto;
+  margin: 15rem auto;
+  padding: 0 2rem 4rem;
+  border: solid 2px #e979a6;
+  border-radius: 10px;
+}
+
+.p-entryForm h2 {
+  position: relative;
+  top: -4rem;
+  line-height: 2.5rem;
+  width: 85%;
+  margin: auto;
+  padding: 1rem 0.5rem;
+  border: solid 3px #e979a6;
+  background-color: #FFF2F6;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.7rem;
   text-align: center;
 }
 
@@ -326,7 +360,7 @@ body.show {
   height: auto;
   margin: 3rem auto 10rem;
   padding: 0 2rem 4rem;
-  border: solid 2px #E979A6;
+  border: solid 2px #e979a6;
   border-radius: 10px;
 }
 
@@ -337,11 +371,6 @@ body.show {
   background-color: white;
   font-size: 2rem;
   text-align: center;
-}
-
-.p-introduction p {
-  line-height: 2rem;
-  font-size: 1.7rem;
 }
 
 .p-newslist {
@@ -355,7 +384,7 @@ body.show {
   position: relative;
   text-align: center;
   color: #e979a6;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 .p-newslist h2::before, .p-newslist h2::after {
@@ -363,17 +392,17 @@ body.show {
   display: inline-block;
   position: absolute;
   top: 50%;
-  width: 80px;
+  width: 90px;
   height: 2px;
   background-color: #e979a6;
 }
 
 .p-newslist h2::before {
-  left: 15%;
+  left: 10%;
 }
 
 .p-newslist h2::after {
-  right: 15%;
+  right: 10%;
 }
 
 .p-post {
@@ -404,5 +433,13 @@ body.show {
 .p-post p {
   font-size: 1.7rem;
   line-height: 2.5rem;
+}
+
+.u-width--80 {
+  width: 80%;
+}
+
+.u-width--90 {
+  width: 90%;
 }
 /*# sourceMappingURL=17emotion.css.map */

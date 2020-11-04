@@ -26,10 +26,8 @@
     position: relative;
     width: 3rem;
     height: 3rem;
-    // margin: 0 0 0 auto;
-    // margin-right: 5%;
-    
-    margin-left: 10%;
+    margin: 0 0 0 auto;
+    margin-right: 5%;
 
     i {
         display: block;
@@ -113,10 +111,7 @@
 
 body.show {
     position: fixed;
-    // top: 0;
-    // left: 0;
-    // ↑iPhoneではposition: fixed; を実装しないとbodyが固定されないが、実装するとbody部分が左右にずれる
-
+    width: 100%;
     height: 100vh;
     overflow-y: hidden;
     // モーダルを開いている時にbody部分を固定（参考URL：https://coliss.com/articles/build-websites/operation/javascript/prevent-page-scrolling-when-a-modal-is-open.html）

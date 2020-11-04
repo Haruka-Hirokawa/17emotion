@@ -6,11 +6,11 @@
 
     <!-- WordPressにログインしている時のみ、ページ最上部に余白を作り、ヘッダー・サイドバーと管理バー（admin-bar）とが重ならないようにする -->
     <?php if( is_user_logged_in() ) : ?>
-    <style type="text/css">
-    .l-header {
-        margin-top: 3.2rem;
-    }
-    </style>
+        <style type="text/css">
+        .l-header {
+            margin-top: 3.2rem;
+        }
+        </style>
     <?php endif; ?>
 
     <?php wp_head(); ?>

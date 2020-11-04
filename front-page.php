@@ -2,22 +2,19 @@
 
     <main class="l-main">
 
-        <!-- スライダーを実装するまでの仮の写真 l-header.scssにスタイリング記載-->
-        <!-- <div class="topimage">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="">
-        </div> -->
-
-        <ul class="slider">
-            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
-            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
-            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
-            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" class="p-topimage01--sp" alt="スライダー画像"></li>
-        </ul>
+        <div class="sliderArea">
+            <ul class="slider full-screen" id="slider">
+                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="スライダー画像"></li>
+                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="スライダー画像"></li>
+                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="スライダー画像"></li>
+                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.jpg" alt="スライダー画像"></li>
+            </ul>
+        </div>
     
     
         
         <section class="p-newslist">
-            <h2>News</h2>
+            <h2 class="c-subTitle">News</h2>
 
             <ul>
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>                
@@ -42,17 +39,27 @@
         <section class="p-introduction">
             <h2>世界一垣根の低い<br>ダンスイベントを目指して</h2>
             
-            <p>皆さんは、ダンスのイベントに出たいと思っても、「上手い人ばかりで場違いじゃないかな…」と思ったことはありませんか？</p>
+            <p>みなさんは、ダンスイベントに出たいと思っても、</p>
+            <p>"上手い人ばかりで場違いじゃないかな…"</p>
+            <p>と思ったことはありませんか？</p>
 
             <br><br>
             <!-- 行と行と行の間に一行分空ける方法（参考URL：https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1124446611） -->
 
-            <p>Emotion!!!は、ダンスを始めたばかりの初心者さんも、ベテランのダンサーさんも、「TVで見るあのアーティストの振付やりたい！」という人も、皆が同じ舞台に立って、楽しむことができる場を目指しています！</p>
+            <p>Emotion!!!は、ダンスの初心者や、まだまだダンスに自信がない人たちに寄り添うイベントです！</p>
             <br><br>
-            <p>舞台で踊る楽しさを知って、経験を積んで、更に大きな舞台に羽ばたいて欲しい。</p>
-            <p>そんな思いが詰まった、あたたかいイベントです。</p>
+            <p>ダンスを始めたばかりの初心者さんも、経験豊富なダンサーさんも、"TVで踊ってたあのアーティストの振付を踊りたい!!!"という人も、</p>
+            <p>みんなが同じ舞台に立ち、出演者の方々に踊ることを心の底から楽しんでもらえる笑顔いっぱいのダンスイベントを目指しています！</p>
             <br><br>
-            <p>皆さんのご参加をお待ちしています！</p>
+            <p>舞台で踊る楽しさを知って、経験を積んで、更に大きな舞台に羽ばたいて欲しい。。。</p>
+            <br><br>
+            <p>そんな思いが詰まった、世界一あたたかいイベントです。(自称)</p>
+            <br><br>
+            <p>みなさんのご参加、お待ちしております(*^^*)</p>
+            <br><br>
+            <br><br>
+            <p>Emotion!!! 主催 MANA</p>
+
         </section>
 
     </main>

@@ -4,29 +4,4 @@
     height: auto;
     margin: 5rem auto 0;
     padding: 5rem 0;
-
-    h2{
-        margin-bottom: 3rem;
-        position: relative;
-        text-align: center;
-        color: $dark-pink;
-        font-size: 2.5rem;
-
-        &::before, &::after{
-            content: "";
-            display: inline-block;
-            // display: inline; との違い（参考URL：https://saruwakakun.com/html-css/basic/display）
-            position: absolute;
-            top: 50%;
-            width: 90px;
-            height: 2px;
-            background-color: $dark-pink;
-        }
-        &::before {
-            left: 10%;
-        }
-        &::after {
-            right: 10%;
-        }
-    }
 }

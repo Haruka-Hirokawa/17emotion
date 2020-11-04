@@ -17,10 +17,11 @@
         wp_enqueue_style( 'Noto Sans JP','Roboto', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap', array() );
         wp_enqueue_style( 'ress', 'https://unpkg.com/ress/dist/ress.min.css', array() ); // リセットcssの読込 必ず自作cssより前に書く 後で書くと自作cssもリセットされる
 
+
         // slickのcssファイルの読込
-        wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick.css', array(), '1.8.1' );
-        wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick-theme.css', array(), '1.8.1' );
-        wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), '1.0.0' );
+        wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick.css', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-1.8.1/slick/slick.css')));
+        wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick-theme.css', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-1.8.1/slick/slick-theme.css')));
+        wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), date('YmdGis', filemtime(get_template_directory().'/css/slick.css')));
 
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/17emotion.css', array(), date('YmdGis', filemtime(get_template_directory().'/css/17emotion.css'))); // 自作cssの読込
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), date('YmdGis', filemtime(get_template_directory().'/style.css')));
@@ -29,14 +30,15 @@
         wp_deregister_script( 'jquery'); //WordPress 本体の jQuery を登録解除
         wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' , "", "3.5.1", true ); // Google提供のCDNの読込（Google Hosted Libraries URL：https://developers.google.com/speed/libraries）
 
+
         wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/22e109cfd0.js', "", "", true );
 
+
         // slickのjsファイルの読込
-        wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick.js', array(), '1.8.1', true );
-        wp_enqueue_script( 'slick-config', get_template_directory_uri() . '/js/slick-config.js', array(), '1.0.0', true );
+        wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick.min.js', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-1.8.1/slick/slick.min.js')), true );
+        wp_enqueue_script( 'slick-config', get_template_directory_uri() . '/js/slick-config.js', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-config.js')), true );
         wp_enqueue_script( 'hamburger-menu', get_template_directory_uri() . '/js/hamburger-menu.js', array(), date('YmdGis', filemtime(get_template_directory().'/js/hamburger-menu.js')), true );
         // 自作のスクリプトを読み込ませる時は、スクリプトの識別名に注意（参考URL：https://works.coldsleep.jp/blog/wp_enqueue_script/）
-
     }
     add_action( 'wp_enqueue_scripts', 'emotion_script' );
 

@@ -69,7 +69,7 @@ li, dl, dt, dd {
 }
 
 .l-footer__copyright {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   font-size: 1.5rem;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -99,7 +99,8 @@ li, dl, dt, dd {
   position: relative;
   width: 3rem;
   height: 3rem;
-  margin-left: 10%;
+  margin: 0 0 0 auto;
+  margin-right: 5%;
 }
 
 .nav_toggle i {
@@ -178,6 +179,7 @@ li, dl, dt, dd {
 
 body.show {
   position: fixed;
+  width: 100%;
   height: 100vh;
   overflow-y: hidden;
 }
@@ -274,6 +276,32 @@ body.show {
   background-color: #CBCBCB;
   border: 0;
   /*デフォルトデザインでは線がある場合があるので、消しておく。*/
+}
+
+.c-subTitle {
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+  color: #e979a6;
+  font-size: 2.5rem;
+}
+
+.c-subTitle::before, .c-subTitle::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 2px;
+  background-color: #e979a6;
+}
+
+.c-subTitle::before {
+  left: 10%;
+}
+
+.c-subTitle::after {
+  right: 10%;
 }
 
 .p-card {
@@ -373,36 +401,14 @@ body.show {
   text-align: center;
 }
 
+.p-introduction p:last-of-type {
+  text-align: right;
+}
+
 .p-newslist {
   height: auto;
   margin: 5rem auto 0;
   padding: 5rem 0;
-}
-
-.p-newslist h2 {
-  margin-bottom: 3rem;
-  position: relative;
-  text-align: center;
-  color: #e979a6;
-  font-size: 2.5rem;
-}
-
-.p-newslist h2::before, .p-newslist h2::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  width: 90px;
-  height: 2px;
-  background-color: #e979a6;
-}
-
-.p-newslist h2::before {
-  left: 10%;
-}
-
-.p-newslist h2::after {
-  right: 10%;
 }
 
 .p-post {

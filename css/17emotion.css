@@ -42,12 +42,12 @@ li, dl, dt, dd {
 .l-footer {
   height: auto;
   padding: 5% 0;
-  background-color: #FFF2F6;
+  background-color: #e979a6;
   text-align: center;
 }
 
 .l-footer__attention {
-  color: #e979a6;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -71,13 +71,12 @@ li, dl, dt, dd {
 .l-footer__copyright {
   margin-top: 5rem;
   font-size: 1.5rem;
+  color: white;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .l-header {
   height: auto;
-  margin: 1rem auto 0;
-  padding: 1rem 0;
   text-align: center;
 }
 
@@ -94,13 +93,23 @@ li, dl, dt, dd {
   height: 10rem;
 }
 
+.p-globalMenu {
+  height: 6rem;
+}
+
 .nav_toggle {
   display: block;
   position: relative;
   width: 3rem;
-  height: 3rem;
+  height: 6rem;
   margin: 0 0 0 auto;
   margin-right: 5%;
+}
+
+@media (min-width: 961px) {
+  .nav_toggle {
+    display: none;
+  }
 }
 
 .nav_toggle i {
@@ -148,14 +157,36 @@ li, dl, dt, dd {
   background-color: white;
 }
 
-.nav_menu__item {
+@media (min-width: 961px) {
+  .nav_menu {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    height: 6rem;
+    background-color: #e979a6;
+  }
+}
+
+.nav_menu > li {
   border-bottom: solid 1px #DEDEDE;
   font-size: 3rem;
   line-height: 5rem;
 }
 
-.nav_menu__item a {
+@media (min-width: 961px) {
+  .nav_menu > li {
+    border-bottom: 0;
+  }
+}
+
+.nav_menu > li a {
   color: #e979a6;
+}
+
+@media (min-width: 961px) {
+  .nav_menu > li a {
+    color: white;
+  }
 }
 
 .nav_menu.show {
@@ -190,7 +221,11 @@ body.show {
 }
 
 .l-main {
-  margin: 5rem auto 10rem;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .c-button--pink {
@@ -360,6 +395,20 @@ body.show {
   }
 }
 
+.p-contact {
+  height: auto;
+  margin: 5rem 0 0;
+  padding: 5rem 0;
+  background-color: #FFF2F6;
+  text-align: center;
+}
+
+.p-contact__qr img {
+  margin: 2rem 0;
+  width: 15rem;
+  height: 15rem;
+}
+
 .p-entryForm {
   width: 90%;
   height: auto;
@@ -409,6 +458,40 @@ body.show {
   height: auto;
   margin: 5rem auto 0;
   padding: 5rem 0;
+}
+
+.wp-pagenavi {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+  margin: 0 2px;
+  padding: 1rem 1.5rem;
+  background-color: #FFF;
+  border: solid 1px #707070;
+  color: #707070;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+  color: #FFF;
+  background-color: #999;
+  border-color: #999;
+}
+
+.wp-pagenavi span.current {
+  background-color: #e979a6;
+  border-color: #e979a6;
+  color: #FFF;
+  font-weight: bold;
 }
 
 .p-post {

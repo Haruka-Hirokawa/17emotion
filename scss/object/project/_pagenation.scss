@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.wp-pagenavi {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    a, span {
+        margin: 0 2px;
+        padding: 1rem 1.5rem;
+        background-color: #FFF;
+        border: solid 1px #707070;
+        color: #707070;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        text-align: center;
+        text-decoration:none;
+    }
+
+    a:hover{
+        color:#FFF; 
+        background-color:#999; 
+        border-color:#999;
+    }
+
+    span.current{
+        background-color: $dark-pink;
+        border-color: $dark-pink;
+        color: #FFF;
+        font-weight: bold;
+    }
+}

@@ -20,7 +20,7 @@
 <body <?php body_class(); ?>>
     <header class="l-header">
 
-        <div class="p-hamburger_menu">
+        <div class="p-globalMenu">
             <span class="nav_toggle" id="nav_toggle">
                 <i></i>
                 <i></i>

@@ -29,6 +29,13 @@
             <p>お探しの商品は見つかりませんでした</p>
             <?php endif; ?>           
         </ul>
+
+        <div class="p-pagenation">
+            <?php if(function_exists("wp_pagenavi")): ?>
+            <?php wp_pagenavi(); ?>
+            <?php else: ?>
+            <?php endif; ?>
+        </div>
     
     </main>    
     

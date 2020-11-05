@@ -21,7 +21,7 @@
         // slickのcssファイルの読込
         wp_enqueue_style( 'slick', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick.css', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-1.8.1/slick/slick.css')));
         wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/js/slick-1.8.1/slick/slick-theme.css', array(), date('YmdGis', filemtime(get_template_directory().'/js/slick-1.8.1/slick/slick-theme.css')));
-        wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), date('YmdGis', filemtime(get_template_directory().'/css/slick.css')));
+        wp_enqueue_style( 'slickEdit', get_template_directory_uri() . '/css/slickEdit.css', array(), date('YmdGis', filemtime(get_template_directory().'/css/slickEdit.css')));
 
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/17emotion.css', array(), date('YmdGis', filemtime(get_template_directory().'/css/17emotion.css'))); // 自作cssの読込
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), date('YmdGis', filemtime(get_template_directory().'/style.css')));

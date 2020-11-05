@@ -2,8 +2,8 @@
 
 .l-header {
     height: auto;
-    margin: 1rem auto 0;
-    padding: 1rem 0;
+    // margin: 1rem auto 0;
+    // padding: 1rem 0;
     text-align: center;
 
     &__sitesubname{
@@ -20,14 +20,22 @@
 }
 
 
+
 // ハンバーガーメニュー
+.p-globalMenu {
+    height: 6rem;
+}
+
 .nav_toggle {
     display: block;
     position: relative;
     width: 3rem;
-    height: 3rem;
+    height: 6rem;
     margin: 0 0 0 auto;
     margin-right: 5%;
+    @include breakpoint( pc ) {
+        display: none;
+    }
 
     i {
         display: block;
@@ -75,13 +83,27 @@
     width: 100%;
     height: auto;
     background-color: white;
+    @include breakpoint( pc ) {
+        position      : static;
 
-    &__item { // wp_nav_menu()で取得したli要素のクラス名を指定する方法（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html#h5_index_10）
+        display: flex;
+        justify-content: space-around;
+        height: 6rem;
+
+        background-color: $dark-pink;
+    }
+    > li { // 【為参考】wp_nav_menu()で取得したli要素のクラス名を指定する方法（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html#h5_index_10）
         border-bottom: solid 1px #DEDEDE;
         font-size: 3rem;
         line-height: 5rem;
+        @include breakpoint( pc ) {
+            border-bottom: 0;
+        }
         a {
             color: $dark-pink;
+            @include breakpoint( pc ) {
+                color: white;
+            }
         }
     }
 

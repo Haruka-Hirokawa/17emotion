@@ -3,11 +3,11 @@
 .l-footer {
     height: auto;
     padding: 5% 0;
-    background-color: $light-pink;
+    background-color: $dark-pink;
     text-align: center;
 
     &__attention{
-        color: $dark-pink;
+        color: white;
         font-size: 2rem;
         font-weight: bold;
     }
@@ -30,6 +30,7 @@
     &__copyright {
         margin-top: 5rem;
         font-size: 1.5rem;
+        color: white;
         font-family: $japanese-font;
     }
 }

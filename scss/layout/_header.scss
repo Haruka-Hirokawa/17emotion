@@ -2,9 +2,11 @@
 
 .l-header {
     height: auto;
-    // margin: 1rem auto 0;
-    // padding: 1rem 0;
+    margin-top: 2rem;
     text-align: center;
+    @include breakpoint( pc ) {
+        margin-top: 7rem;
+    }
 
     &__sitesubname{
         padding-top: 2rem;
@@ -15,46 +17,116 @@
         &__img {
             width: 90%;
             height: 10rem;
+            max-width: 700px;
+            @include breakpoint( tablet ) {
+                height: auto;
+            }
         }
     }
 }
 
 
 
-// ハンバーガーメニュー
+// ↓ハンバーガーメニュー
+
 .p-globalMenu {
-    height: 6rem;
+    height: 5rem;
+    background-color: white;
+    @include breakpoint( pc ) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background-color: $dark-pink;
+    }
 }
 
+
+// ↓ナビゲーションメニュー リスト部分
+.nav_menu {
+    position: fixed;
+    top: -100%;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    padding: 10rem 2rem 5rem;
+    background-color: white;
+    transition: all .5s 0s ease;
+
+    @include breakpoint( pc ) {
+        display: flex;
+        justify-content: space-around;
+        position: static;
+        max-width: 1180px;
+        margin: auto;
+        padding: 1rem 0;
+        background-color: $dark-pink;
+    }
+
+    > li { // 【為参考】wp_nav_menu()で取得したli要素のクラス名を指定する方法（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html#h5_index_10）
+        border-bottom: solid 1px #DEDEDE;
+        font-size: 3rem;
+        line-height: 5rem;
+        @include breakpoint( pc ) {
+            border-bottom: 0;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        a {
+            color: $dark-pink;
+            @include breakpoint( pc ) {
+                color: white;
+            }
+        }
+    }
+
+    &.show {
+        top: 0;
+    }
+}
+// ↑ナビゲーションメニュー リスト部分
+
+
+// ↓ハンバーガーメニュー ボタン部分
 .nav_toggle {
     display: block;
-    position: relative;
-    width: 3rem;
-    height: 6rem;
-    margin: 0 0 0 auto;
-    margin-right: 5%;
+    position: fixed;
+    top: 2rem;
+    left: 95%;
+    transform: translate(-95%,0);
+    z-index: 15;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: $light-pink; 
+    
     @include breakpoint( pc ) {
         display: none;
+        position: static;
     }
 
     i {
         display: block;
-        width: 100%;
+        width: 70%;
         height: 3px;
         background-color: $dark-pink;
         position: absolute;
         transition: transform .5s, opacity .5s;
 
         &:nth-child(1) {
-            top: 0;
+            top: 20%;
+            left: 15%;
         }
         &:nth-child(2) {
             top: 0;
             bottom: 0;
+            left: 15%;
             margin: auto;
         }
         &:nth-child(3) {
-            bottom: 0;
+            bottom: 20%;
+            left: 15%;
         }
     }
 
@@ -69,55 +141,15 @@
     }
 
 }
+// ↑ハンバーガーメニュー ボタン部分
 
-
-
-
-.nav_menu {
-    display: none;
-
-    position: fixed;
-    top: 6rem;
-    z-index: 10;
-
-    width: 100%;
-    height: auto;
-    background-color: white;
-    @include breakpoint( pc ) {
-        position      : static;
-
-        display: flex;
-        justify-content: space-around;
-        height: 6rem;
-
-        background-color: $dark-pink;
-    }
-    > li { // 【為参考】wp_nav_menu()で取得したli要素のクラス名を指定する方法（参考URL：https://www.webdesignleaves.com/pr/wp/wp_nav_menus.html#h5_index_10）
-        border-bottom: solid 1px #DEDEDE;
-        font-size: 3rem;
-        line-height: 5rem;
-        @include breakpoint( pc ) {
-            border-bottom: 0;
-        }
-        a {
-            color: $dark-pink;
-            @include breakpoint( pc ) {
-                color: white;
-            }
-        }
-    }
-
-    &.show {
-        display: block;
-    }
-}
 
 // ↓スマホ画面 サイドバー出現時 モーダル部分（body部分を透過）
 .p-hamburger_menu-background {
     display: none;
 
     position: fixed;
-    top: 11rem;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -132,19 +164,8 @@
 
 
 body.show {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
-    // モーダルを開いている時にbody部分を固定（参考URL：https://coliss.com/articles/build-websites/operation/javascript/prevent-page-scrolling-when-a-modal-is-open.html）
-}
+    width: 100%; // slickの影響？ハンバーガーメニューを表示した際にbody部分の幅が広くなるので、それを防止するために指定
 
-
-
-
-.topimage {
-    img {
-        width: 100%;
-        height: 25rem;
-    }
+    // position: fixed;
+    // 【為参考】モーダルを開いている時にbody部分を固定（参考URL：https://coliss.com/articles/build-websites/operation/javascript/prevent-page-scrolling-when-a-modal-is-open.html）
 }

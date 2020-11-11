@@ -1,9 +1,20 @@
 <?php get_header(); ?>
 
+    <div class="sliderArea">
+        <ul class="slider full-screen p-slider">
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol1_eyecatch.jpg" alt="スライダー画像"></li>
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol2_eyecatch.jpg" alt="スライダー画像"></li>
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol3_eyecatch.jpg" alt="スライダー画像"></li>
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol4_eyecatch.jpg" alt="スライダー画像"></li>
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-1_eyecatch.jpg" alt="スライダー画像"></li>
+            <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-2_eyecatch.jpg" alt="スライダー画像"></li>
+        </ul>
+    </div>
+
     <main class="l-main">
 
-        <div class="sliderArea">
-            <ul class="slider full-screen">
+        <!-- <div class="sliderArea">
+            <ul class="slider full-screen p-slider">
                 <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol1_eyecatch.jpg" alt="スライダー画像"></li>
                 <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol2_eyecatch.jpg" alt="スライダー画像"></li>
                 <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol3_eyecatch.jpg" alt="スライダー画像"></li>
@@ -11,28 +22,14 @@
                 <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-1_eyecatch.jpg" alt="スライダー画像"></li>
                 <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-2_eyecatch.jpg" alt="スライダー画像"></li>
             </ul>
-        </div>
-    
-    
-        
+        </div> -->
+
         <section class="p-newslist">
             <h2 class="c-subTitle">News</h2>
 
-            <ul>
-                <?php if(have_posts()): while(have_posts()): the_post(); ?>                
-                <li class="c-news">
-                    <p class="c-news__date"><?php echo get_the_date(); ?></p>
-                    <a href="<?php the_permalink(); ?>">
-                        <p class="c-news__title"><?php the_title(); ?></p>
-                    </a>
-                    <hr>
-                </li>       
-                <?php endwhile; else: ?>
-                <p>新着情報はありません</p>
-                <?php endif; ?>           
-            </ul>
+            <?php get_template_part("components/archive-article"); ?>
 
-            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button--pink u-width--80">See All News</button>
+            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button--pink u-rightButton">See All News</button>
             <!-- WordPressの各ページへリンクを貼る方法（参考URL：https://www.sejuku.net/blog/61709） -->
             <!-- WordPressでは初期設定で「ブログ投稿記事一覧」のURLを取得し、利用できる状態にはなっていない！？（参考URL：https://designerbrg.com/blog_list_url/） -->
 

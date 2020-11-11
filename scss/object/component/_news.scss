@@ -1,8 +1,14 @@
 @import "../../variables";
 
 .c-news {
-    width: 90%;
+    width: 100%;
     margin: auto;
+
+    > div {
+        @include breakpoint( tablet ) {
+            display: flex;
+        }
+    }
 
     &__date {
         margin-top: 3rem;
@@ -15,6 +21,10 @@
         font-size: 1.7rem;
         color: #707070;
         text-decoration: underline;
+        @include breakpoint( tablet ) {
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
     }
     hr {
         display: block;

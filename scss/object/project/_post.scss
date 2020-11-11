@@ -29,4 +29,16 @@
         font-size: 1.7rem;
         line-height: 2.5rem;
     }
+
+    ul, ol {
+        padding: 3rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    ul li{
+        list-style-type: disc;
+    }
+    ol li{
+        list-style-type: decimal;
+    }
 }

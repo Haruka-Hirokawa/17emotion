@@ -1,24 +1,36 @@
 @import "../../variables";
 
 .p-entryForm {
-    width: 90%;
-    height: auto;
-    margin: 15rem auto;
-    padding: 0 2rem 4rem;
-    border: solid 2px $dark-pink;
-    border-radius: 10px;
+    @include breakpoint( tablet ) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        // グリッドレイアウト 実装方法（参考URL：https://sterfield.co.jp/designer/%E5%B0%91%E3%81%97%E3%81%9A%E3%81%A4%E5%AE%9F%E8%A3%85%E3%81%AE%E9%80%B2%E3%82%93%E3%81%A7%E3%81%8D%E3%81%A6%E3%81%84%E3%82%8Bcss%E3%81%AE%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E3%83%AC%E3%82%A4/）
+    }
 
-    h2{
-        position: relative;
-        top: -4rem;
-        line-height: 2.5rem;
-        width: 85%;
-        margin: auto;
-        padding: 1rem 0.5rem;
-        border: solid 3px $dark-pink;
-        background-color: $light-pink;
-        font-family: $japanese-font;
-        font-size: 1.7rem;
-        text-align: center;
+    &__section {
+        width: 100%;
+        height: auto;
+        margin: 15rem auto;
+        padding: 0 2rem 4rem;
+        border: solid 2px $dark-pink;
+        border-radius: 10px;
+        @include breakpoint( tablet ) {
+            margin: 5rem 0;
+        }
+    
+        h2{
+            position: relative;
+            top: -4rem;
+            line-height: 2.5rem;
+            width: 85%;
+            margin: auto;
+            padding: 1rem 0.5rem;
+            border: solid 3px $dark-pink;
+            background-color: $light-pink;
+            font-family: $japanese-font;
+            font-size: 1.7rem;
+            text-align: center;
+        }
     }
 }

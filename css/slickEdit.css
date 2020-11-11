@@ -3,21 +3,10 @@
 slick
 ====================================================================*/
 
-/* html, body {
-  margin: 0;
-  padding: 0;
-}
-* {
-  box-sizing: border-box;
-} */
-
-.sliderArea {
+/* .sliderArea {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 25px;
-}
-.sliderArea.w300 {
-  max-width: 300px;
 }
 .slick-slide {
   margin: 0 5px;
@@ -50,16 +39,16 @@ slick
 }
 .thumb .slick-slide:hover {
   opacity: .7;
-}
+} */
 
 /*====================================================================
 .full-screen
 ====================================================================*/
 
-.full-screen .slick-list {
+/* .slider .slick-list {
   overflow: visible;
 }
-.full-screen.slider {
+.slider {
   max-width: 300px;
   margin: 0 auto;
-}
+} */

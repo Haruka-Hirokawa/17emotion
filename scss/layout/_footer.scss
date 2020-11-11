@@ -2,35 +2,41 @@
 
 .l-footer {
     height: auto;
-    padding: 5% 0;
+    padding: 2rem 0;
     background-color: $dark-pink;
     text-align: center;
 
-    &__attention{
-        color: white;
-        font-size: 2rem;
-        font-weight: bold;
-    }
+    &__inner {
+        max-width: 1180px;
+        margin: auto;
 
-    &__socialmedia{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2rem;
-    }
-
-    &__privacy {
-        margin-top: 5rem;
-        font-size: 1.5rem;
-        font-family: $japanese-font;
-        a {
-            color: #707070;
+        &__attention{
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
         }
-    }
-
-    &__copyright {
-        margin-top: 5rem;
-        font-size: 1.5rem;
-        color: white;
-        font-family: $japanese-font;
+    
+        &__socialmedia{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+    
+        &__privacy {
+            margin-top: 5rem;
+            font-size: 1.4rem;
+            font-family: $japanese-font;
+            font-weight: bold;
+            a {
+                color: white;
+            }
+        }
+    
+        &__copyright {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            color: white;
+            font-family: $japanese-font;
+        }
     }
 }

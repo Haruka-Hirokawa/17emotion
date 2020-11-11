@@ -2,6 +2,7 @@
 
 .c-button--pink {
     display: block;
+    width: 100%;
     margin: 5rem auto;
     padding: 0.8rem 0;
     border-radius: 10rem;
@@ -14,8 +15,9 @@
 
 .c-button--white {
     display: block;
-    margin: 0 0 0 auto;
-    margin-top: 3rem;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
     padding: 1rem 0;
     width: 50%;
     border-radius: 10rem;
@@ -23,5 +25,4 @@
     color: $dark-pink;
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
 }

@@ -1,20 +1,22 @@
 @import "../../variables";
 
 .p-introduction {
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: 3rem auto 10rem;
+    margin: auto;
+    margin-top: 6rem;
     padding: 0 2rem 4rem;
     border: solid 2px $dark-pink;
     border-radius: 10px;
 
     h2{
-        line-height: 2.5rem;
         position: relative;
         top: -2.5rem;
+        line-height: 2.5rem;
         background-color: white;
         font-size: 2rem;
         text-align: center;
+        margin-bottom: 3rem;
     }
     
     p:last-of-type {

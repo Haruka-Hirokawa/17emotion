@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html <?php language_attributes(); ?>>
+<!-- テンプレートタグでのlang属性の書き方（参考URL：https://www.irohabook.com/wordpress-language-attributes） -->
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2Q44KE63C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F2Q44KE63C');
+    </script>
+    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <!-- Google Chromeの position:fixed; 要素が表示されないことに関するバグの解決策（参考URL：https://stackoverflow.com/questions/44679794/position-fixed-on-chrome-mobile-causing-element-to-move-on-scroll-up-down）-->
 
     <!-- WordPressにログインしている時のみ、ページ最上部に余白を作り、ヘッダー・サイドバーと管理バー（admin-bar）とが重ならないようにする -->
     <?php if( is_user_logged_in() ) : ?>

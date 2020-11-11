@@ -1,48 +1,55 @@
 @import "../../variables";
 
 .p-card {
-    margin: 5rem 0;
-
-    @include breakpoint( tablet ) {
-        display: flex;
-        margin: auto;
-        margin-bottom: 5rem;
-        width: 90%;
-        height: 33rem;
-    }
-    
-    &__img {
-        display: block;
-        margin: auto;
-        width: 90%;
-        height: 24rem;
-    
-        @include breakpoint( tablet ) {
-            width: 50%;
-            height: 100%;
-        }
+    @include breakpoint( pc ) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
-    &__contents {
-        display: block;
-        margin: auto;
-        padding: 1rem;
-        width: 90%;
-        height: 24rem;
-        background-color: $dark-pink;
-        color: white;
-        text-align: center;
-        dt {
-            margin: 2rem 0;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        dd {
-            line-height: 4rem;
-        }
+    &__list {
+        margin: 5rem 0;
+    
         @include breakpoint( tablet ) {
-            width: 50%;
-            height: 100%;
+            display: flex;
+            margin: auto;
+            margin-bottom: 5rem;
+            width: 100%;
+        }
+        
+        &__img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 38vh;
+            min-height: 24rem;
+        
+            @include breakpoint( tablet ) {
+                width: 50%;
+                height: 30vh;
+            }
+        }
+    
+        &__contents {
+            display: block;
+            position: relative;
+            margin: auto;
+            padding: 3%;
+            width: 100%;
+            height: 38vh;
+            min-height: 24rem;
+            background-color: $dark-pink;
+            color: white;
+            text-align: center;
+            dt {
+                margin: 5% 0;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            @include breakpoint( tablet ) {
+                width: 50%;
+                height: 30vh;
+            }
         }
     }
 }

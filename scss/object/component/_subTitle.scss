@@ -6,6 +6,12 @@
     text-align: center;
     color: $dark-pink;
     font-size: 2.5rem;
+    
+    @include breakpoint( tablet ) {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
 
     &::before, &::after{
         content: "";
@@ -18,9 +24,9 @@
         background-color: $dark-pink;
     }
     &::before {
-        left: 10%;
+        left: 0;
     }
     &::after {
-        right: 10%;
+        right: 0;
     }
 }

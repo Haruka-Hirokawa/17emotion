@@ -1,0 +1,76 @@
+@import "../../variables";
+
+.sliderArea {
+    // max-width: 100%;
+    // margin: 0 auto;
+    padding: 2rem 0;
+    background-color: $light-pink;
+    overflow: visible;
+    @include breakpoint( pc ) {
+        overflow: hidden;
+    }
+}
+
+.p-slider .slick-list {
+    overflow: visible;
+    @include breakpoint( pc ) {
+        overflow: hidden;
+    }
+}
+
+.p-slider {
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint( tablet ) {
+        max-width: 50rem;
+    }
+}
+
+.slick-slide { // liタグのクラス名
+    margin: 0 5px;
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 23rem;
+    @include breakpoint( tablet ) {
+        height: 32rem;
+    }
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: 3rem;
+}
+.slick-prev {
+    left: -3.5rem;
+}
+.slick-next {
+    right: -3.5rem;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #e979a6;
+    opacity: 1;
+    font-size: 3rem;
+}
+
+.slick-active {
+    color: #e979a6;
+    opacity: 1;
+}
+.slick-current {
+    color: #e979a6;
+    opacity: 1;
+}
+.thumb {
+    margin: 20px 0 0;
+}
+.thumb .slick-slide {
+    cursor: pointer;
+}
+.thumb .slick-slide:hover {
+    opacity: .7;
+}

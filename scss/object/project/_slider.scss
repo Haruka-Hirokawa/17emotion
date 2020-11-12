@@ -1,32 +1,33 @@
 @import "../../variables";
 
-.sliderArea {
-    // max-width: 100%;
-    // margin: 0 auto;
-    padding: 2rem 0;
-    background-color: $light-pink;
-    overflow: visible;
-    @include breakpoint( pc ) {
-        overflow: hidden;
-    }
-}
-
-.p-slider .slick-list {
-    overflow: visible;
-    @include breakpoint( pc ) {
-        overflow: hidden;
-    }
-}
-
 .p-slider {
-    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem 0 2rem;
+    background-color: $light-pink;
+    @include breakpoint( pc ) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.slider { // ulタグ
+    width: 90%;
     margin: 0 auto;
     @include breakpoint( tablet ) {
         max-width: 50rem;
     }
 }
 
-.slick-slide { // liタグのクラス名
+
+.slick-list { // スライドのimg部分？
+    overflow: visible;
+    @include breakpoint( pc ) {
+        overflow: hidden;
+    }
+}
+
+
+.slick-slide { // liタグ
     margin: 0 5px;
     transition: all ease-in-out .3s;
     opacity: .2;
@@ -35,36 +36,43 @@
 .slick-slide img {
     width: 100%;
     height: 23rem;
+    object-fit: cover;
     @include breakpoint( tablet ) {
         height: 32rem;
     }
 }
 
-.slick-prev, .slick-next {
+
+.slick-prev, .slick-next { // img左右の矢印
     z-index: 1;
     width: 3rem;
+    height: 3.5rem;
 }
 .slick-prev {
-    left: -3.5rem;
+    left: -2rem;
 }
 .slick-next {
-    right: -3.5rem;
+    right: -2rem;
 }
 
 .slick-prev:before, .slick-next:before {
-    color: #e979a6;
+    color: $dark-pink;
     opacity: 1;
     font-size: 3rem;
 }
 
+
 .slick-active {
-    color: #e979a6;
     opacity: 1;
 }
-.slick-current {
-    color: #e979a6;
-    opacity: 1;
+// .slick-current {
+//     opacity: 1;
+// }
+
+.slick-dots li.slick-active button:before {
+    color: $dark-pink;
 }
+
 .thumb {
     margin: 20px 0 0;
 }

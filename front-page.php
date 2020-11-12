@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-    <div class="sliderArea">
-        <ul class="slider full-screen p-slider">
+    <div class="p-slider">
+        <ul class="slider">
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol1_eyecatch.jpg" alt="スライダー画像"></li>
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol2_eyecatch.jpg" alt="スライダー画像"></li>
             <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol3_eyecatch.jpg" alt="スライダー画像"></li>
@@ -12,17 +12,6 @@
     </div>
 
     <main class="l-main">
-
-        <!-- <div class="sliderArea">
-            <ul class="slider full-screen p-slider">
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol1_eyecatch.jpg" alt="スライダー画像"></li>
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol2_eyecatch.jpg" alt="スライダー画像"></li>
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol3_eyecatch.jpg" alt="スライダー画像"></li>
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol4_eyecatch.jpg" alt="スライダー画像"></li>
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-1_eyecatch.jpg" alt="スライダー画像"></li>
-                <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/vol5-2_eyecatch.jpg" alt="スライダー画像"></li>
-            </ul>
-        </div> -->
 
         <section class="p-newslist">
             <h2 class="c-subTitle">News</h2>

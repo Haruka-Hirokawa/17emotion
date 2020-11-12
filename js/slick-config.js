@@ -9,15 +9,15 @@ $( function() {
         // slidesToShow: 3,
         // slidesToScroll: 2,
         speed: 1000,
-        responsive: [
-            {
-                breakpoint: 560,
-                settings: {
-                    centerMode: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-        ]
+        // responsive: [
+        //     {
+        //         breakpoint: 560,
+        //         settings: {
+        //             centerMode: false,
+        //             slidesToShow: 1,
+        //             slidesToScroll: 1
+        //         }
+        //     },
+        // ]
     } );
 } );

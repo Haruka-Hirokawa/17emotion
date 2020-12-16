@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.p-information {
+    height: auto;
+    margin: 5rem 0 0;
+    padding: 3rem 0;
+    background-color: $light-pink;
+    text-align: center;
+
+    &__inner {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        @include breakpoint( pc ) {
+            display: flex;
+            justify-content: space-around;
+            div {
+                width: 100%;
+            }
+        }
+        
+        &__picture img{
+            margin: 2rem 0;
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+}

@@ -5,7 +5,6 @@
     position: relative;
     text-align: center;
     color: $dark-pink;
-    font-size: 2.5rem;
     
     @include breakpoint( tablet ) {
         width: 80%;
@@ -19,7 +18,7 @@
         // display: inline; との違い（参考URL：https://saruwakakun.com/html-css/basic/display）
         position: absolute;
         top: 50%;
-        width: 80px;
+        width: 50px;
         height: 2px;
         background-color: $dark-pink;
     }

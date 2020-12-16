@@ -1,7 +1,4 @@
 
-.u-rightButton {
-    @include breakpoint( tablet ) {
-        width: 23rem;
-        margin: 8rem 0 0 auto;
-    }
+.u-margin {
+    margin-bottom: 10rem;
 }

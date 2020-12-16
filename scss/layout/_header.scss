@@ -9,7 +9,12 @@
     }
 
     &__sitesubname{
-        padding-top: 2rem;
+        font-size: 2rem;
+        padding-top: 5rem;
+        @include breakpoint( pc ) {
+            font-size: 2.4rem;
+            padding-top: 8rem;
+        }
     }
 
     &__sitename{

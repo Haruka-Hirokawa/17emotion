@@ -2,6 +2,8 @@
 
 .p-newslist {
     height: auto;
-    margin: 5rem 0;
     padding: 5rem 0;
+    @include breakpoint( tablet ) {
+        padding: 10rem 0;
+    }
 }

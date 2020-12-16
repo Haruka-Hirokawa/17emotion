@@ -21,7 +21,7 @@
                         <dt><?php the_title(); ?></dt>
                         <dd><?php the_excerpt(); ?></dd>
 
-                        <button type="button" onclick="location.href='<?php the_permalink(); ?>'" class="c-button--white">See More</button>
+                        <button type="button" onclick="location.href='<?php the_permalink(); ?>'" class="c-button--white">　More　></button>
                     </dl>
                     <!-- 【dl・dt・dd】の使い方（参考URL：https://webliker.info/13381/） -->
                     

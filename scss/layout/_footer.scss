@@ -7,13 +7,16 @@
     text-align: center;
 
     &__inner {
-        max-width: 1180px;
+        max-width: 1000px;
         margin: auto;
 
         &__attention{
             color: white;
             font-size: 2rem;
             font-weight: bold;
+            @include breakpoint( tablet ) {
+                font-size: 2.4rem;
+            }
         }
     
         &__socialmedia{
@@ -25,7 +28,6 @@
         &__privacy {
             margin-top: 5rem;
             font-size: 1.4rem;
-            font-family: $japanese-font;
             font-weight: bold;
             a {
                 color: white;
@@ -36,7 +38,6 @@
             margin-top: 1.5rem;
             font-size: 1.4rem;
             color: white;
-            font-family: $japanese-font;
         }
     }
 }

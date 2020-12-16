@@ -1,43 +1,5 @@
 @charset "UTF-8";
 
-html {
-    font-size: 62.5%; // →10px
-}
-
-body{
-    min-width: 320px;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    color: #707070;
-}
-
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.7rem;
-    line-height: 2.5rem;
-}
-
-a {
-    text-decoration: none;
-    &:hover {
-        opacity: 0.6;
-    }
-    &:active {
-        opacity: 1;
-    }
-}
-
-li, dl, dt, dd {
-    list-style: none;
-}
-
-
 // ↓メディアクエリ
 @mixin breakpoint($point) {
     @if $point == tablet {
@@ -53,3 +15,49 @@ li, dl, dt, dd {
     }
 }
 // ↑メディアクエリ
+
+html {
+    font-size: 62.5%; // →10px
+}
+
+body{
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    color: #707070;
+}
+
+h1 {
+    font-size: 7vw;
+    line-height: 1.5;
+    @include breakpoint( tablet ) {
+        font-size: 3.6rem;
+    }
+}
+h2 {
+    font-size: 6vw;
+    line-height: 1.5;
+    @include breakpoint( tablet ) {
+        font-size: 3.2rem;
+    }
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+
+li, dl, dt, dd {
+    list-style: none;
+}

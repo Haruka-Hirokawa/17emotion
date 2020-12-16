@@ -18,7 +18,7 @@
 
             <?php get_template_part("components/archive-article"); ?>
 
-            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button--pink u-rightButton">See All News</button>
+            <button type="button" onclick="location.href='<?php bloginfo ('url'); ?>/news'" class="c-button--pink--list">See All News</button>
             <!-- WordPressの各ページへリンクを貼る方法（参考URL：https://www.sejuku.net/blog/61709） -->
             <!-- WordPressでは初期設定で「ブログ投稿記事一覧」のURLを取得し、利用できる状態にはなっていない！？（参考URL：https://designerbrg.com/blog_list_url/） -->
 

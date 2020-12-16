@@ -12,18 +12,11 @@
     gtag('config', 'G-F2Q44KE63C');
     </script>
     
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <!-- Google Chromeの position:fixed; 要素が表示されないことに関するバグの解決策（参考URL：https://stackoverflow.com/questions/44679794/position-fixed-on-chrome-mobile-causing-element-to-move-on-scroll-up-down）-->
-
-    <!-- WordPressにログインしている時のみ、ページ最上部に余白を作り、ヘッダー・サイドバーと管理バー（admin-bar）とが重ならないようにする -->
-    <?php if( is_user_logged_in() ) : ?>
-        <style type="text/css">
-        .l-header {
-            margin-top: 3.2rem;
-        }
-        </style>
-    <?php endif; ?>
+    
 
     <?php wp_head(); ?>
 </head>

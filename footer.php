@@ -1,19 +1,37 @@
-    <section class="p-contact">
-        <div class="p-contact__inner">
+    <section class="p-information">
+        <div class="p-information__inner">
+            <div>
+                <h2 class="c-subTitle">Contact</h2>
 
-            <h2 class="c-subTitle">Contact</h2>
+                <p>イベント出演などに関する<br>お問い合わせは<br>こちらよりお願いします</p>
 
-            <p>イベント出演などに関するお問い合わせは<br>こちらよりお願いします</p>
+                <div class="p-information__inner__picture">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/qr_officialLine.jpg" alt="QRコード">
+                </div>
 
-            <div class="p-contact__inner__qr">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/qr_officialLine.jpg" alt="スライダー画像">
+                <p>Emotion!!!公式LINE</p>
+                <p class="u-margin">（QRコードでLINEの友だちを追加）</p>          
+
             </div>
 
-            <p>Emotion!!!公式LINE</p>
-            <p>（QRコードでLINEの友だちを追加）</p>
+            <div>
+                <h2 class="c-subTitle">Studio</h2>
 
-        </div>    
+                <p>Emotion!!! 主催 MANA<br>運営スタジオ<br>公式HPはこちら↓↓</p>
+
+                <a href ="https://studio-1-brood.crayonsite.com/">
+                    <div class="p-information__inner__picture">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_studio1brood.jpg" alt="提携スタジオアイコン画像">
+                    </div>
+                </a>
+
+                <p>スタジオエインブロード</p>
+                <p class="u-margin">初心者も経験者も大歓迎！</p>
+            </div>
+        </div>
+        
     </section>
+
     
     <footer class="l-footer">
         <div class="l-footer__inner">

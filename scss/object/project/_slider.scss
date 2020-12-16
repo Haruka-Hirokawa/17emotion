@@ -1,12 +1,14 @@
 @import "../../variables";
 
 .p-slider {
-    margin-top: 5rem;
+    width: 100%;
+    margin: 5rem 0;
     padding: 3rem 0 2rem;
     background-color: $light-pink;
-    @include breakpoint( pc ) {
-        width: 70%;
-        margin: 0 auto;
+    @include breakpoint( tablet ) {
+        width: 80%;
+        max-width: 800px;
+        margin: 8rem auto;
     }
 }
 
@@ -20,10 +22,7 @@
 
 
 .slick-list { // スライドのimg部分？
-    overflow: visible;
-    @include breakpoint( pc ) {
-        overflow: hidden;
-    }
+    overflow: hidden;
 }
 
 

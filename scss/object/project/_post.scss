@@ -2,8 +2,13 @@
 
 .p-post {
     width: 90%;
-    margin: auto;
     max-width: 1200px;
+    margin: auto;
+    @include breakpoint( tablet ) {
+        padding: 5rem;
+        border: solid 2px $dark-pink;
+    }
+    
 
     h2{
         margin-bottom: 5rem;
@@ -11,8 +16,6 @@
         border-left: solid 5px $dark-pink;
         border-bottom: solid 3px $dark-pink;
         background-color: $light-pink;
-        font-size: 2rem;
-        line-height: 1.5;
         @include breakpoint( pc ) {
             margin-bottom: 8rem;
         }
@@ -22,8 +25,6 @@
         margin-bottom: 3rem;
         padding: 0.5rem 1rem;
         border-left: solid 5px $dark-pink;
-        font-size: 1.8rem;
-        line-height: 1.5;
         @include breakpoint( pc ) {
             margin-bottom: 5rem;
         }

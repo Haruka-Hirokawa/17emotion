@@ -33,6 +33,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 5.5vw;
+  line-height: 1.5;
+}
+
+@media (min-width: 561px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
 p {
   font-size: 1.7rem;
   line-height: 1.5;
@@ -678,8 +689,15 @@ body.show {
 
 .p-post {
   width: 90%;
-  margin: auto;
   max-width: 1200px;
+  margin: auto;
+}
+
+@media (min-width: 561px) {
+  .p-post {
+    padding: 5rem;
+    border: solid 2px #e979a6;
+  }
 }
 
 .p-post h2 {
@@ -688,8 +706,6 @@ body.show {
   border-left: solid 5px #e979a6;
   border-bottom: solid 3px #e979a6;
   background-color: #FFF2F6;
-  font-size: 2rem;
-  line-height: 1.5;
 }
 
 @media (min-width: 961px) {
@@ -702,8 +718,6 @@ body.show {
   margin-bottom: 3rem;
   padding: 0.5rem 1rem;
   border-left: solid 5px #e979a6;
-  font-size: 1.8rem;
-  line-height: 1.5;
 }
 
 @media (min-width: 961px) {

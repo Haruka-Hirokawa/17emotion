@@ -19,7 +19,7 @@
 
                 <p>Emotion!!! 主催 MANA<br>運営スタジオ<br>公式HPはこちら↓↓</p>
 
-                <a href ="https://studio-1-brood.crayonsite.com/">
+                <a href ="https://studio-1-brood.crayonsite.com/" target="_blank">
                     <div class="p-information__inner__picture">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_studio1brood.jpg" alt="提携スタジオアイコン画像">
                     </div>
